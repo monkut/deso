@@ -1,0 +1,49 @@
+============================================
+Feature Requirements
+============================================
+
+Description
+==================
+
+This document is intended to provide a list of features required for CSV data display on tile maps.
+
+
+Features
+===========
+
+1.  Data will be in excel-compatable CSV format.
+
+2.  Data will contain "latitude" and "longitude" columns defined by on of the following column header pairs.
+    "lon", "lat"
+    "longitude", "latitude"
+
+3.  If a required column is missing or not detected on load an Error will be displayed with the missing column.
+
+4.  Columns will be defined as wither "Text" or "Numeric".
+
+5. Data is aggregated in order for it to be displayed on the map.
+    Columns for aggregation are selected on Import (upload).
+
+6. "Text" columns have the following Aggregation methods avaialble based on frequency (count):
+    "Mode"
+    "Max"
+
+
+
+7. "Numeric" columns have the following Aggregation Methods Available:
+
+    50 percentile
+    67 percentile
+    95 percentile
+    99 percentile
+    average
+    median
+    varience
+    stddev
+
+8. Aggregations are performed on load
+
+9.  Aggregated Tiles are available on-demand.
+
+
+10. Data layer is created on import, only one layer may be displayed at a time.

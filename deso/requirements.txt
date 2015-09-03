@@ -1,0 +1,7 @@
+django==1.8.2
+psycopg2
+redis
+django-redis
+python-ldap3
+pillow
+-e git+http://github.com/monkut/tmstiler.git#egg=tmstiler
